@@ -1,0 +1,240 @@
+.container{
+	margin: 0 5px;
+}
+.container-quer{
+	margin: 0 15px;
+}
+#contact-query{
+	padding-top: 10px;
+	width: 100%;
+	height: 900px;
+	background-color: #f7f7f7;
+}
+.contact-hendtext-1{
+	width: 100%;
+	height: auto;
+	color: #000;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.contact-hendtext-1 span{
+	font-size: 24px;
+}
+input[type="checkbox"]{
+	display: none;
+}
+label{
+	cursor: pointer;
+	margin-right: 10px;
+	line-height: 30px;
+}
+.chk-custom + label:before{
+	width: 24px;
+	height: 24px;
+	border-radius: 6px;
+	border: 2px solid #3c8969;
+	content: '';
+	line-height: 25px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: top;
+}
+.chk-custom:checked + label:before{
+	background: #3c8969;
+	color: #fff;
+	content: '0';
+	content: '\2713';
+	font-weight: bold;
+	font-size: 24px;
+}
+#selectchoice{
+	width: 90%;
+	height: 40px;
+	border: 3px solid #3c8969;
+	margin: 20px 15px;
+	font-family: 'Sukhumvit';
+	font-size: 1em;
+	color: #666;
+}
+#writing-message{
+	width: 90%;
+	height: 150px;
+	margin: 0 15px;
+	margin-bottom: 20px;
+	border: 3px solid #3c8969;
+	font-family: 'Sukhumvit';
+	font-size: 1em;
+	color: #000;
+	padding-left: 5px;
+}
+#writing-message:focus{
+	background-color: #243736;
+	color: #fff;
+}
+.input-nameandemail{
+	width: 90%;
+	height: 40px;
+	margin: 0 15px;
+	margin-bottom: 20px;
+	border: 3px solid #3c8969;
+	font-family: 'Sukhumvit';
+	font-size: 1em;
+	color: #000;
+	padding-left: 5px;
+}
+.input-nameandemail:focus{
+	background-color: #243736;
+	color: #fff;
+}
+.contact-hendtext-2{
+	width: 90%;
+	height: 40px;
+	font-size: 27px;
+	margin-left: 15px;
+	margin-bottom: 40px;
+	color: #000;
+}
+.sned-btn{
+	width: 80px;
+	height: 30px;
+	background-color: #3c8969;
+	border: 1px solid #3c8969;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-size: 16px;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	transition:all 0.3s ease-in-out;
+	-webkit-transform: all 0.3s ease-in-out;
+  	-ms-transform:all 0.3s ease-in-out;
+  	-moz-transform: all 0.3s ease-in-out;
+  	-o-transform: all 0.3s ease-in-out;
+}
+.sned-btn:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color: #3c8969;
+	border: 1px solid #3c8969;
+}
+#contact-query-contant-2 label{
+	font-size: 1.2em;
+}
+.chk-contant-2 + label:before{
+	margin-bottom: 20px;
+}
+.chk-send{
+	background-color: #3c8969;
+	border: 1px solid #3c8969;
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-size: 22px;
+	border-radius: 5px;
+	transition:all 0.3s ease-in-out;
+	-webkit-transform: all 0.3s ease-in-out;
+  	-ms-transform:all 0.3s ease-in-out;
+  	-moz-transform: all 0.3s ease-in-out;
+  	-o-transform: all 0.3s ease-in-out;
+}
+.chk-send:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color: #3c8969;
+	border: 1px solid #3c8969;
+}
+#contact-map{
+	width: 100%;
+	height: 610px;
+	padding-top: 30px;
+	background-color: #fff;
+}
+#map{
+	width: 100%;
+	height: 350px;
+	background-color: #f7f7f7;
+	margin-bottom: 30px;
+}
+.contact-map-text{
+	width: 220px;
+	height: auto;
+	margin: 20px auto;
+	text-align: left;
+	color: #000;
+	font-size: 18px;
+}
+.contact-map-text i{
+	color: #3c8969;
+}
+@media screen and (min-width: 768px){
+	#contact-query{
+		clear: both;
+		height: 600px;
+	}
+	#selectchoice{
+		width: 95%;
+		margin-left: 0;
+	}
+	#writing-message{
+		width: 95%;
+		margin-left: 0;
+	}
+	.input-nameandemail{
+		width: 95%;
+		margin-left: 0;
+	}
+	.sned-btn{
+		height: 45px;
+		margin-right: 20px;
+	}
+	#contact-query-contant-1{
+		width: 60%;
+		float: left;
+	}
+	#contact-query-contant-2{
+		float: left;
+	}
+	.contact-hendtext-2{
+		margin-bottom: 10px;
+	}
+	.contact-map-text{
+		width: 268px;
+		font-size: 22px;
+	}
+}
+@media screen and (min-width: 1024px){
+	.container{
+		width: 960px;
+		margin: 0 auto;
+	}
+	.container-quer{
+		width: 960px;
+		margin: 0 auto;
+	}
+	.container-map{
+		width: 960px;
+		margin: 0 auto;
+	}
+	#contact-map{
+		height: 450px;
+	}
+	#map-wrap{
+		width: 60%;
+		float: left;
+	}
+	#contact-text-wrap{
+		padding-top: 100px;
+		width: 40%;
+		float: left;
+	}
+	#contact-map-text{
+		margin-left: 50%;
+	}
+}

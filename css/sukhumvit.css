@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Sukhumvit';
+    src: url('../fonts/Sukhumvit.eot');
+    src: url('../fonts/Sukhumvit.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Sukhumvit.woff2') format('woff2'),
+         url('../fonts/Sukhumvit.woff') format('woff'),
+         url('../fonts/Sukhumvit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
