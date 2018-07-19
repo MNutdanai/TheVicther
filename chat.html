@@ -1,0 +1,548 @@
+<html>
+<head>
+	<title>The Victher</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-chat.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sukhumvit.css">
+	<link rel="icon" href="images/logo-big.png" type="image/gif" sizes="20x20">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<!-- logo footer to top -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.logo-footer').click(function(){
+				$('html,body').animate({scrollTop:0},2000);//กําหนดตําแหน่งและกําหนดคว่มเร็ว 
+				return false;
+			});
+		});
+
+	</script>
+	<!-- end logo footer to top -->
+	<!-- Toggle -->
+	<script>
+	    $(".bt-login").click(function() {
+	        $(this).toggleClass("on");
+	        $("#logbox").slideToggle();
+	    });
+	    $(document).ready(function() {
+	        $(".bt-login").click(function() {
+	            $("#logbox").toggle(600);
+	        });
+	    });
+	</script>
+	<!-- Toggle -->
+</head>
+<body>
+	<div id="wrapper">
+		<!-- social fix -->
+		<ul class='social'>
+						  <li>
+						    <a class="fa fa-facebook" href="#">    
+						      <span>Facebook</span>
+						    </a> 
+						  </li>
+						  
+						  <li>
+						    <a class="fa fa-twitter" href="#">
+						      <span>Twitter</span>
+						    </a>
+						  </li>
+						  
+						  <li>
+						    <a class="fa fa-instagram " href="#">
+						      <span>Instagram</span>
+						    </a>
+						  </li>
+
+						  <li>
+						    <a class="fa fa-google-plus" href="#">
+						    <span>Google Plus</span>
+						    </a> 
+						  </li>
+
+						  <li>
+						    <a class="fa  fa-pinterest-p" href="#">
+						    <span>Pinterest</span>
+						    </a> 
+						  </li>
+
+						  <li>
+						    <a class="fa fa-youtube-play" href="#">
+						    <span>YouTube</span>
+						    </a> 
+						  </li>
+						  
+		</ul><!-- social -->
+		<!-- social fix -->
+		<header class="header-site">
+			<nav class="nav-site">
+				<!-- toggle -->
+							<!-- mobile menu -->
+						<section id="menu_bar">
+							<span id="set_menu_bar">THE VICTHER</span>
+							<div id="bt-moblie">
+								<div id="toggle">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
+								</div><!-- toggle -->
+								<div id="menu">
+									<ul>
+										<a href="home.html"><li>	
+											<span>
+												<i class="fa fa-home"></i>
+											</span><br>
+											หน้าหลัก									
+										</li></a>
+										<a href="main.html"><li>
+											<span>
+												<i class="fa fa-users"></i>
+											</span><br>
+											สังคมนักปั่น
+										</li></a>
+										<li class="menu-active">
+											<span class="text-active">
+												<i class="fa fa-comments"></i>
+											</span><br>
+											กระทู้
+										</li>
+										<a href="about.html"><li>
+											<span>
+												<i class="fa fa-bicycle"></i>
+											</span><br>
+											เกี่ยวกับจักรยาน</li></a>
+										<a href="contact.html"><li>
+											<span>
+												<i class="fa fa-envelope"></i>
+											</span><br>
+											ติดต่อเรา</li></a>
+									</ul>
+								</div><!-- menu -->
+							</div><!-- bt-moblie -->
+						</section><!-- menu_bar -->
+					<!-- toggle end -->
+			<div class="container">
+					<div class="logo"><a href="index.html"><img src="images/logo.png" class="logo-style"></a></div>
+				<div class="menu-wrapper">
+					<ul>
+					<li><a href="home.html" class="menu-item">หน้าหลัก</a></li>
+					<li><a href="main.html" class="menu-item">สังคมนักปั่น</a></li>
+					<li><a href="#" class="menu-item menu-item-active">กระทู้ </a></li>
+					<li><a href="about.html" class="menu-item">เกี่ยวกับจักรยาน</a></li>
+					<li><a href="contact.html" class="menu-item">ติดต่อเรา</a></li>
+					</ul>
+				</div>
+			</div><!-- container -->
+			
+			<div class="login">
+				<div class="container">
+					<nav class="main-nav">
+						<div class="login-bottom">
+							<button type="button"class="bottom login-bottom-ma">
+								<a class="cd-signin" href="#0">เข้าสู่ระบบ</a></button>
+							<button type="button"class="bottom login-bottom-ma">
+								<a class="cd-signup" href="#0">สมัครสมาชิก</a></button>
+						</div><!-- login-bottom -->
+					</nav><!-- login-site -->
+				</div>
+			</div><!-- login -->
+			</nav><!-- nav-site -->
+		</header><!-- header-site -->
+
+		<!-- login-box-eff -->
+			<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+			<ul class="cd-switcher">
+				<li><a href="#0">เข้าสู่ระบบ</a></li>
+				<li><a href="#0">สมัครสมาชิก</a></li>
+			</ul>
+
+			<div id="cd-login"> <!-- log in form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signin-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password">Password</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="remember-me" checked>
+						<label for="remember-me">Remember me</label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="เข้าสู่ระบบ">
+					</p>
+				</form>
+				
+				<p class="cd-form-bottom-message"><a href="#0">ลืมรหัสผ่าน?</a></p>
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-login -->
+
+			<div id="cd-signup"> <!-- sign up form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-username">Username</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="accept-terms">
+						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="สมัครสมาชิก">
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-signup -->
+
+			<div id="cd-reset-password"> <!-- reset password form -->
+				<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Reset password">
+					</p>
+				</form>
+
+				<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+			</div> <!-- cd-reset-password -->
+			<a href="#0" class="cd-close-form">Close</a>
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
+		<!-- end-login-box-eff -->
+		<section id="posts" class="section-style">
+			<div class="container">
+				<h1 class="section-heading">Posts<br><span>กระทู้แนะนำ <i class="fa fa-newspaper-o"></i></span></h1>
+					<div class="posts-box">
+						<div class="posts-head">
+							<p class="posts-head-contant-1">หัวเรื่อง</p>
+							<p class="posts-head-contant-2">โพสต์โดย</p>
+							<p class="posts-head-contant-2">ความคิดเห็น</p>
+							<p class="posts-head-contant-2">วันที่โพสต์</p>
+						</div><!-- posts-head -->
+						<div id="posts-item-wrap">
+							<div class="posts-item">
+								<p class="posts-item-contant-1">แบรนด์จักรยานที่กําลังมาตอนนี้หน่อยครับ</p>
+								<p class="posts-item-contant-2"><span>GTXC4</span></p>
+								<p class="posts-item-contant-2">27</p>
+								<p class="posts-item-contant-2">19/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">แนะนําจักรยานที่กําลังมาตอนนี้หน่อยครับ</p>
+								<p class="posts-item-contant-2"><span>GTUU7</span></p>
+								<p class="posts-item-contant-2">10</p>
+								<p class="posts-item-contant-2">19/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">หาร้านซ้อมราคาถูกแถวกรุงเทพ</p>
+								<p class="posts-item-contant-2"><span>GTUU7</span></p>
+								<p class="posts-item-contant-2">17</p>
+								<p class="posts-item-contant-2">19/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">โอวัลติน แรลลี่ซีนีเพล็กซ์โกะ</p>
+								<p class="posts-item-contant-2"><span>EQD46</span></p>
+								<p class="posts-item-contant-2">35</p>
+								<p class="posts-item-contant-2">19/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">หาเพื่อนไปปั่นเล่นสวนตอนเย็นๆครับ</p>
+								<p class="posts-item-contant-2"><span>RCDC8</span></p>
+								<p class="posts-item-contant-2">70</p>
+								<p class="posts-item-contant-2">19/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">MTB ตัวใหม่ราคานี้ OKไหมครับ?</p>
+								<p class="posts-item-contant-2"><span>MOD88</span></p>
+								<p class="posts-item-contant-2">11</p>
+								<p class="posts-item-contant-2">18/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ฝากงานนี้ด้วยครับ</p>
+								<p class="posts-item-contant-2"><span>PAO44</span></p>
+								<p class="posts-item-contant-2">20</p>
+								<p class="posts-item-contant-2">18/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">สอบถามช่วงเวลาปั่นกลุ่มรอบใหญ่ chocolate ville</p>
+								<p class="posts-item-contant-2"><span>GIWA</span></p>
+								<p class="posts-item-contant-2">32</p>
+								<p class="posts-item-contant-2">18/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ไม่มีเพื่อนไม่เป็นไร ปั่นด้วยใจ ไปคนเดียว..</p>
+								<p class="posts-item-contant-2"><span>dscott</span></p>
+								<p class="posts-item-contant-2">100</p>
+								<p class="posts-item-contant-2">18/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">เสื้อทีมรามทรา ปี2558 ออกมาให้สั่งจองแล้วครับ</p>
+								<p class="posts-item-contant-2"><span>TUM13</span></p>
+								<p class="posts-item-contant-2">99</p>
+								<p class="posts-item-contant-2">17/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ฝากตัวด้วยครับ มือใหม่ คู้บอน27</p>
+								<p class="posts-item-contant-2"><span>KIT77</span></p>
+								<p class="posts-item-contant-2">44</p>
+								<p class="posts-item-contant-2">17/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">มีใครคิดเปิดคอร์สสอนมือใหม่</p>
+								<p class="posts-item-contant-2"><span>Real</span></p>
+								<p class="posts-item-contant-2">34</p>
+								<p class="posts-item-contant-2">17/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ขอปั่นด้วยคนนะครับ</p>
+								<p class="posts-item-contant-2"><span>Sumpo</span></p>
+								<p class="posts-item-contant-2">71</p>
+								<p class="posts-item-contant-2">16/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">นัดหมาย ซ้อม ออกรอบ ออกทิป แข่ง </p>
+								<p class="posts-item-contant-2"><span>mr.t</span></p>
+								<p class="posts-item-contant-2">12</p>
+								<p class="posts-item-contant-2">16/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">สอบถามถนนรอบๆ พุทธมณฑล </p>
+								<p class="posts-item-contant-2"><span>Mr.mtb</span></p>
+								<p class="posts-item-contant-2">34</p>
+								<p class="posts-item-contant-2">16/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ห้องโชว์จักรยานเสือภูเขาของชาวชุมเสือบ้านคลอง</p>
+								<p class="posts-item-contant-2"><span>Runbg</span></p>
+								<p class="posts-item-contant-2">80</p>
+								<p class="posts-item-contant-2">16/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">มีท่านใด ร้านไหน รับต่อจักรยาน สองตอนบ้าง</p>
+								<p class="posts-item-contant-2"><span>jaga99</span></p>
+								<p class="posts-item-contant-2">48</p>
+								<p class="posts-item-contant-2">16/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ชุมเสือฯ คุยเดือนธันวามหามงคล และส่งท้ายปีเก่าม</p>
+								<p class="posts-item-contant-2"><span>jnops</span></p>
+								<p class="posts-item-contant-2">27</p>
+								<p class="posts-item-contant-2">16/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">งานแข่งกะรนเม่าเท่นไบค์ ภูเก็ต</p>
+								<p class="posts-item-contant-2"><span>NBT47</span></p>
+								<p class="posts-item-contant-2">76</p>
+								<p class="posts-item-contant-2">16/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ใครปั่นสนามเขียวตอนกลางวันมั่งครับ</p>
+								<p class="posts-item-contant-2"><span>Thaicc</span></p>
+								<p class="posts-item-contant-2">10</p>
+								<p class="posts-item-contant-2">16/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">MTB 27.5 นิ้ว </p>
+								<p class="posts-item-contant-2"><span>Pong41</span></p>
+								<p class="posts-item-contant-2">34</p>
+								<p class="posts-item-contant-2">15/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ขอสมัครเข้าทีมรวมมิตรด้วยคนได้มั้ยครับ </p>
+								<p class="posts-item-contant-2"><span>Nawal</span></p>
+								<p class="posts-item-contant-2">61</p>
+								<p class="posts-item-contant-2">15/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ของFree มีจริงครับ กดครับ </p>
+								<p class="posts-item-contant-2"><span>Omg91</span></p>
+								<p class="posts-item-contant-2">28</p>
+								<p class="posts-item-contant-2">15/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+							<div class="posts-item">
+								<p class="posts-item-contant-1">ขอเชิญร่วมงาน Polygon Demo Day 2015</p>
+								<p class="posts-item-contant-2"><span>Oil88</span></p>
+								<p class="posts-item-contant-2">34</p>
+								<p class="posts-item-contant-2">15/10/58</p>
+								<div class="posts-item-overley"></div>
+							</div><!-- posts-item -->
+
+						</div><!-- posts-item-wrap -->
+						<button type="button" class="poxts-cher">ตั้งกระทู้</button>
+						<button type="button" class="poxts-cher poxts-cher-dis-non">ดูทั้งหมด</button>
+					</div><!-- posts-box -->
+			</div><!-- container -->
+		</section><!-- posts -->
+		<section id="chat-wrap">
+		<div class="container-p">
+			<article class="post-chat">
+				<div class="chat">
+					<div class="chat-heading">
+						<div class="chat-heading-box">
+							<div class="chat-heading-img"></div>
+							<div class="chat-heading-title">ไม่มีเพื่อนไม่เป็นไร ปั่นด้วยใจ ไปคนเดียว..<br><span>Bblanksbannk Chakrit</span></div>
+							<div class="chat-post-date">6 ชม.</div>
+						</div>
+					</div><!-- chat-heading -->
+
+					<div class="chat-contain">
+						
+						<div class="chat-post-1">
+							<img class="chat-post-img" src="images/profile-3.jpg">
+							<div class="chat-post-name">Sorawat Tunaram</div>
+							<div class="chat-post-date">3 ชม.</div>
+							<div class="chat-post-text">สุดยอดเลยครับ บ้านผมอยู่รามอินทรา 39 มีโอกาศขอร่วมทริปด้วยนะคร้าบบบบ</div>
+						</div>
+
+						<div class="chat-post-2">
+							<img class="chat-post-img" src="images/profile-1.jpg">
+							<div class="chat-post-name">Max Nutdanai</div>
+							<div class="chat-post-date">2 ชม.</div>
+							<div class="chat-post-text">การเดินทางด้วยปั่นจักรยานมันทำให้ผมรู้สึกว่าได้มองโลกได้ช้าลง ได้เห็นอะไรหลายๆอย่างไม่ต้องเร่งรีบ ซึ่งมันทำให้มีเวลาคิดถึงเรื่องต่างๆหรือปัญหาให้คลายลงได้ ปั่นคนเดียวก็เช่นกันรู้สึกสบายใจหรือจะไปกับเพื่อนก็ดีไปอีกแบบครับ</div>
+						</div>
+
+						<div class="chat-post-3">
+							<img class="chat-post-img" src="images/profile-6.jpg" >
+							<div class="chat-post-name">Nattapon Goalkeeper</div>
+							<div class="chat-post-date">1 ชม.</div><br>
+							<div class="chat-post-text">ผมก็เคยมีความรู้สึกแบบนี้เหมือนกันครับ เคยไปลองปรึกษากับเพื่อน เพื่อนบอกกับผมว่า.. หูกระจงควรปลูกไว้ห่างจากตัวบ้าง</div>
+						</div>
+
+						<div class="chat-post-4">
+							<img class="chat-post-img" src="images/profile-7.jpg">
+							<div class="chat-post-name">Tosaporn Boonyajareanjit</div>
+							<div class="chat-post-date">1 ชม.</div>
+							<div class="chat-post-text">ผมก็เป็นคนนึงที่ชอบการปั่นจักรยานคนเดียว ส่วนใหญ๋วันนึงผมจะปั่นไปข้างหน้าอย่างเดียวรู้สึกอยากไปให้ไกลๆ มันรู้สึกว่าได้ออกกำลังกายจริงๆ แล้วอีกอย่างผมกำลังอลความอ้วน อิอิ </div>
+						</div>
+					</div><!-- chat-contain -->
+					<div class="message">
+						<textarea placeholder="แสดงความคิดเห็น.." class="InMessage"></textarea>
+						<button type="submit" value="Submit" class="message-but">ส่ง</button>
+					</div>
+				</div><!-- chat -->
+			</article><!-- post-chat -->
+		</div><!-- container-p -->
+	</section><!-- chat-wrap -->
+		<footer class="footer-site">
+			<div class="container">
+				<div class="menu-footer">
+					<nav class="nav-footer-site">
+						<ul class="footer-main-menu">	
+							<li><a href="home.html">หน้าหลัก</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="home.html#challenge">สังเวียนนักปั่น</a></li>
+									<br><li><a href="home.html#activity">กิจกรรม</a></li>
+									<br><li><a href="home.html#posts">กระทู้แนะนำ</a></li>
+									<br><li><a href="home.html#recommend">แนะนำสถานที่</a></li>
+								</ul>
+							</li>
+							<li><a href="main.html">สังคมนักปั่น</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="main.html#challenge">สังคมนักปั่น</a></li>
+									<br><li><a href="main.html#wrapper-invite">ไปปั่นกัน</a></li>
+									<br><li><a href="main.html#wrap-share">แบ่งปันประสบการณ์</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="footer-main-menu-active">กระทู้</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="#chat-wrap">ร่วมพูดคุย</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">เกี่ยวกับจักรยาน</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="about.html#news">ข่าวสาร</a></li>
+									<br><li><a href="about.html#article">บทความน่ารู้</a></li>
+									<br><li><a href="about.html#bicycle-mtb">จักรยาน</a></li>
+									<br><li><a href="about.html#wrapper-gallery">แกลลอรี่</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">ติดต่อเรา</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="contact.html#contact-map">สถานที่</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div><!-- menu-footer -->
+					<div class="logo-footer"><img src="images/logo.png"></div>
+					<div class="contact-box">
+						<h3 class="contact-box-heading">ติดตามข่าวสาร</h3>
+						<p class="contact-box-text">คุณสามามรถติดตาม อัพเดทข่าวสารของ THE VICTHER&nbsp;&nbsp;เพียงแค่คุณใส่อีเมลล์ 
+						และกดปุ่มติดตามได้ที่นี้เลย</p>
+						<input type="text" class="email-input" placeholder="Email">
+						<button type="submit" class="contact-input">ติดตาม</button>
+					</div><!-- contact-box -->
+			</div>	<!-- container -->
+		</footer><!-- footer-site -->
+	</div><!-- wrapper -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Login jQuery -->
+<!-- Toggle -->
+		<script type="text/javascript">
+		            $("#toggle").click(function() {
+		                $(this).toggleClass("on");
+		                $("#menu").slideToggle();
+		            });
+		</script>
+<!-- Toggle -->
+</body>
+</html>

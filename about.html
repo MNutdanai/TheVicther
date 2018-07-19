@@ -1,0 +1,576 @@
+<html>
+<head>
+	<title>The Victher</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-about.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sukhumvit.css">
+	<link rel="icon" href="images/logo-big.png" type="image/gif" sizes="20x20">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<!-- logo footer to top -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.logo-footer').click(function(){
+				$('html,body').animate({scrollTop:0},3000);//กําหนดตําแหน่งและกําหนดคว่มเร็ว 
+				return false;
+			});
+		});
+
+	</script>
+	<!-- end logo footer to top -->
+	<!-- Toggle -->
+	<script>
+	    $(".bt-login").click(function() {
+	        $(this).toggleClass("on");
+	        $("#logbox").slideToggle();
+	    });
+	    $(document).ready(function() {
+	        $(".bt-login").click(function() {
+	            $("#logbox").toggle(600);
+	        });
+	    });
+	</script>
+	<!-- Toggle -->
+	<!-- bicycle-function -->
+	<script>
+$(document).ready(function(){
+    $("#bicycle-choice-1").click(function(){
+        $("#bicycle-show").addClass("bike-cick-1");
+    });
+     $("#bicycle-choice-2").click(function(){
+        $("#bicycle-show").addClass("bike-cick-2");
+    });
+      $("#bicycle-choice-3").click(function(){
+        $("#bicycle-show").addClass("bike-cick-3");
+    });
+       $("#bicycle-choice-4").click(function(){
+        $("#bicycle-show").addClass("bike-cick-4");
+    });
+     
+});
+</script>
+	<!-- bicycle-function -->
+</head>
+<body>
+	<div id="warpper">
+		<!-- social fix -->
+		<ul class='social'>
+						  <li>
+						    <a class="fa fa-facebook" href="#">    
+						      <span>Facebook</span>
+						    </a> 
+						  </li>
+						  
+						  <li>
+						    <a class="fa fa-twitter" href="#">
+						      <span>Twitter</span>
+						    </a>
+						  </li>
+						  
+						  <li>
+						    <a class="fa fa-instagram " href="#">
+						      <span>Instagram</span>
+						    </a>
+						  </li>
+
+						  <li>
+						    <a class="fa fa-google-plus" href="#">
+						    <span>Google Plus</span>
+						    </a> 
+						  </li>
+
+						  <li>
+						    <a class="fa  fa-pinterest-p" href="#">
+						    <span>Pinterest</span>
+						    </a> 
+						  </li>
+
+						  <li>
+						    <a class="fa fa-youtube-play" href="#">
+						    <span>YouTube</span>
+						    </a> 
+						  </li>
+						  
+		</ul><!-- social -->
+		<!-- social fix -->
+		<header class="header-site">
+			<nav class="nav-site">
+				<!-- toggle -->
+							<!-- mobile menu -->
+						<section id="menu_bar">
+							<span id="set_menu_bar">THE VICTHER</span>
+							<div id="bt-moblie">
+								<div id="toggle">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
+								</div><!-- toggle -->
+								<div id="menu">
+									<ul>
+										<a href="home.html"><li>	
+											<span>
+												<i class="fa fa-home"></i>
+											</span><br>
+											หน้าหลัก									
+										</li></a>
+										<a href="main.html"><li>
+											<span>
+												<i class="fa fa-users"></i>
+											</span><br>
+											สังคมนักปั่น</li></a>
+										<a href="chat.html"><li>
+											<span>
+												<i class="fa fa-comments"></i>
+											</span><br>
+											กระทู้</li></a>
+										<li class="menu-active">
+											<span class="text-active">
+												<i class="fa fa-bicycle"></i>
+											</span><br>
+											เกี่ยวกับจักรยาน
+										</li>
+										<a href="contact.html"><li>
+											<span>
+												<i class="fa fa-envelope"></i>
+											</span><br>
+											ติดต่อเรา</li></a>
+									</ul>
+								</div><!-- menu -->
+							</div><!-- bt-moblie -->
+						</section><!-- menu_bar -->
+					<!-- toggle end -->
+			<div class="container">
+					<div class="logo"><a href="index.html"><img src="images/logo.png" class="logo-style"></a></div>
+				<div class="menu-wrapper">
+					<ul>
+					<li><a href="home.html" class="menu-item">หน้าหลัก</a></li>
+					<li><a href="main.html" class="menu-item">สังคมนักปั่น</a></li>
+					<li><a href="chat.html" class="menu-item">กระทู้ </a></li>
+					<li><a href="#" class="menu-item menu-item-active">เกี่ยวกับจักรยาน</a></li>
+					<li><a href="contact.html" class="menu-item">ติดต่อเรา</a></li>
+					</ul>
+				</div>
+			</div><!-- container -->
+			
+			<div class="login">
+				<div class="container">
+					<nav class="main-nav">
+						<div class="login-bottom">
+							<button type="button"class="bottom login-bottom-ma">
+								<a class="cd-signin" href="#0">เข้าสู่ระบบ</a></button>
+							<button type="button"class="bottom login-bottom-ma">
+								<a class="cd-signup" href="#0">สมัครสมาชิก</a></button>
+						</div><!-- login-bottom -->
+					</nav><!-- login-site -->
+				</div>
+			</div><!-- login -->
+			</nav><!-- nav-site -->
+		</header><!-- header-site -->
+
+		<!-- login-box-eff -->
+			<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+			<ul class="cd-switcher">
+				<li><a href="#0">เข้าสู่ระบบ</a></li>
+				<li><a href="#0">สมัครสมาชิก</a></li>
+			</ul>
+
+			<div id="cd-login"> <!-- log in form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signin-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password">Password</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="remember-me" checked>
+						<label for="remember-me">Remember me</label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="เข้าสู่ระบบ">
+					</p>
+				</form>
+				
+				<p class="cd-form-bottom-message"><a href="#0">ลืมรหัสผ่าน?</a></p>
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-login -->
+
+			<div id="cd-signup"> <!-- sign up form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-username">Username</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="accept-terms">
+						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="สมัครสมาชิก">
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-signup -->
+
+			<div id="cd-reset-password"> <!-- reset password form -->
+				<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Reset password">
+					</p>
+				</form>
+
+				<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+			</div> <!-- cd-reset-password -->
+			<a href="#0" class="cd-close-form">Close</a>
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
+		<!-- end-login-box-eff -->
+		<section id="news">
+		<div class="container-n">
+			<div class="news-heading">
+				<span>News </span><br>ข่าวสารแนะนำ
+			</div>
+			<article class="container-news">
+
+				<div class="news-sub">
+					<div class="news-sub-1">
+						<a href="#">
+							<div class="news-sub-img-2"></div>
+							<div class="news-sub-contain">Monkey Light Pro ล้อจักรยานเรืองแสงลายกราฟิก อุปกรณ์สุดล้ำสำหรับนักปั่น</div>
+						</a>
+					</div>
+
+					<div class="news-sub-1">
+						<a href="#">
+						<div class="news-sub-img-3"></div>
+						<div class="news-sub-contain">‘Babel’ จักรยานคันนี้ปลอดภัยที่สุดในโลก</div>
+						</a>
+					</div>
+
+					<div class="news-sub-1 sub-r">
+						<a href="#">
+						<div class="news-sub-img-4"></div>
+						<div class="news-sub-contain">"ไข่เรืองแสง" ไฟท้ายจักรยานลูกเล่นใหม่ "แกว่งได้"</div>
+						</a>
+					</div>
+
+					<div class="news-sub-1">
+						<a href="#">
+							<div class="news-sub-img-5"></div>
+							<div class="news-sub-contain">แกะกล่องของใหม่  Bianchi SPECIALISSIMA 2016  กับเทคโนโลยีที่ทำให้จักรยานไปได้เร็วขึ้น</div>
+						</a>
+					</div>
+
+					<div class="news-sub-1">
+						<a href="#">
+							<div class="news-sub-img-6"></div>
+							<div class="news-sub-contain">Audi ค่ายยนตกรรมระดับโลก เผยโฉม E-Bike จักรยานไฮเทค </div>
+						</a>
+					</div>
+
+					<div class="news-sub-1 sub-r">
+						<a href="#">
+							<div class="news-sub-img-7"></div>
+							<div class="news-sub-contain">เทคโนโลยีใหม่สุด เปลี่ยนจักรยานธรรมดา เป็น Smart Bike</div>
+						</a>
+					</div>
+				</div><!-- news-sub -->
+			</article><!-- container-news -->
+		</div><!-- container -->
+	</section><!-- news -->
+	<section id="article">
+		<div class="container-article">
+			<div class="article-heading">
+				<span>Article </span><br>บทความน่าสนใจ
+			</div>
+			<div class="container-article">
+				<div class="article-1">
+					<a href="#">
+						<div class="article-pic-1">
+							<div class="article-contain-1"> 01 <span>จักรยานชนิดไหนที่เหมาะกับไลฟ์สไตล์แบบคุณ</span><br> 
+								<div class="article-contain-i"></div>
+								<div class="article-overlay"> Mountain bikes หรือ เสือภูเขา เป็นจักรยานที่อยู่ในความนิยมมากว่า 20 ปีแล้ว เสือภูเขาเป็นจักรยานที่เหมาะสำหรับการขี่ในภูมิประเทศขรุขระ โครงสร้างจะแข็งแกร่งดูบึกบึนใช้แฮนด์ตรงเพื่อให้การควบคุมที่ง่าย มีล้อขนาดใหญ่เพื่อช่วยให้จักรยาน..</div>
+							</div>
+						</div>
+					</a>
+				</div><!-- article -->
+
+				<div class="article-2">
+					<a href="#">
+						<div class="article-pic-2">
+							<div class="article-contain-1 at2"> 02 <span>การเลือกซื้อรถจักรยานเสือภูเขาสำหรับมือใหม่</span><br> 
+								<div class="article-contain-i"></div>
+								<div class="article-overlay">สำหรับมือใหม่ที่สนใจจักรยานเสือภูเขา บทความนี้เราจะนำเสนอคู่มือในการเลือกซื้อเสือภูเขาเท่ห์ๆสักคัน.. </div>
+							</div>
+						</div>
+					</a>
+				</div><!-- article -->
+
+				<div class="article-3">
+					<a href="#">
+						<div class="article-pic-3">
+							<div class="article-contain-2"> 03 <span>การตั้งเกียร์จักรยาน คุณก็ทำเองได้</span><br>
+								<div class="article-contain-i2"></div>
+								<div class="article-overlay">เมื่อใช้งานจักรยานเป็นเวลานาน ก็อาจมีบ้างโอกาสที่เกียร์จักรยานจะทำงานผิดพลาดได้.. </div>
+							</div>
+						</div>
+					</a>
+				</div><!-- article -->
+
+				<div class="article-4">
+					<a href="#">
+						<div class="article-pic-4">
+							<div class="article-contain-3"> 04 <span>สิบประโยชน์ที่ได้จากปั่นจักรยานออกกำลังกาย</span>
+								<div class="article-contain-i3"></div>
+								<div class="article-overlay"><br>รู้หรือไม่ครับ ว่าการออกกำลังกาย ด้วยการปั่นจักรยานนั้น เป็นอะไรที่สุดยอดมาก และแทบจะเรียกได้ว่าเป็นการออกกำลังกายในทุกสัดส่วนเลยทีเดียว ที่เน้นๆ เลยคือ บริเวณช่วงขาที่จะกระชับขึ้น เพราะส่วนนี้ต้องออกแรงปั่น หน้าท้องที่เกร็งขณะขับจักรยานก็จะเกิดอาการเกร็งและค่อยๆ สลายไขมัน..</div>
+							</div>
+						</div>
+					</a>
+				</div><!-- article -->
+
+				<div class="article-5">
+					<a href="#">
+						<div class="article-pic-5">
+							<div class="article-contain-4"> 05 <span>ฟังเสียงหัวใจตัวเองซะบ้างก่อนจะ overtraining </span><br>
+								<div class="article-contain-i4"></div>
+								<div class="article-overlay">แม้บางครั้งซ้อมหนักมากๆ ไม่เคยหวั่น แต่ร่างกายไม่เต็มร้อยตามไปด้วยนะครับ ให้ฟังสัญญานที่ส่งจากทางร่างกายบ้าง.. </div>
+							</div>
+						</div>
+					</a>
+				</div><!-- article -->
+
+			</div><!-- container-article -->
+		</div><!-- container -->
+	</section><!-- contain -->
+		<section id="bicycle-mtb" class="section-style">
+			<div class="container">
+				<h1 class="section-heading section-heading-black">MTB Bicycle<br><span>จักรยาน <i class="fa fa-bicycle"></i>
+				</span>
+				</h1>
+				<div class="bicycle-contact">
+					<div class="bicycle-choice">
+						<div id="bicycle-choice-1">
+							<img class="bicycle-choice-img"src="images/bike-c-1.jpg">
+						</div><!-- bicycle-choice-1 -->
+						<div id="bicycle-choice-2">
+							<img class="bicycle-choice-img"src="images/bike-c-2.jpg">
+						</div><!-- bicycle-choice-2 -->
+						<div id="bicycle-choice-3">
+							<img class="bicycle-choice-img"src="images/bike-c-3.jpg">
+						</div><!-- bicycle-choice-3 -->
+						<div id="bicycle-choice-4">
+							<img class="bicycle-choice-img"src="images/bike-c-4.jpg">
+						</div><!-- bicycle-choice-4 -->
+						<div class="bicycle-choice-arrowleft">
+							<img src="img/arrow-left.png">
+						</div><!-- bicycle-choice-arrowleft -->
+						<div class="bicycle-choice-arrowright">
+							<img src="img/arrow-right.png">
+						</div><!-- bicycle-choice-arrowright -->
+					</div><!-- bicycle-choice -->
+					<div id="bicycle-show">
+					</div><!-- bicycle-show -->
+					<img class="logo-bg-bike"src="images/logo.png">
+				</div><!-- bicycle-contact -->
+			</div><!-- container -->
+		</section><!-- bicycle-mtb -->
+		<section id="wrapper-gallery">
+		<div id="container">
+			<div class="heading-name">Gallery<br><span>รูปภาพ</span></div>
+			<div class="gallery-1">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-2">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-3">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-4">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-5">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-6">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-7">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-8">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-9">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-10">
+				<div class="box-opacity">
+					<div class="social_hover">
+						<a href="#" id="seach"><i class="fa fa-search-plus"></i></a>
+						<a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" id="twitter"><i class="fa fa-twitter "></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		<footer class="footer-site">
+			<div class="container">
+				<div class="menu-footer">
+					<nav class="nav-footer-site">
+						<ul class="footer-main-menu">	
+							<li><a href="home.html">หน้าหลัก</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="home.html#challenge">สังเวียนนักปั่น</a></li>
+									<br><li><a href="home.html#activity">กิจกรรม</a></li>
+									<br><li><a href="home.html#posts">กระทู้แนะนำ</a></li>
+									<br><li><a href="home.html#recommend">แนะนำสถานที่</a></li>
+								</ul>
+							</li>
+							<li><a href="main.html">สังคมนักปั่น</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="main.html#challenge">สังคมนักปั่น</a></li>
+									<br><li><a href="main.html#wrapper-invite">ไปปั่นกัน</a></li>
+									<br><li><a href="main.html#wrap-share">แบ่งปันประสบการณ์</a></li>
+								</ul>
+							</li>
+							<li><a href="chat.html">กระทู้</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="chat.html#chat-wrap">ร่วมพูดคุย</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="footer-main-menu-active">เกี่ยวกับจักรยาน</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="#news">ข่าวสาร</a></li>
+									<br><li><a href="#article">บทความน่ารู้</a></li>
+									<br><li><a href="#bicycle-mtb">จักรยาน</a></li>
+									<br><li><a href="#wrapper-gallery">แกลลอรี่</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">ติดต่อเรา</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="contact.html#contact-map">สถานที่</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div><!-- menu-footer -->
+					<div class="logo-footer"><img src="images/logo.png"></div>
+					<div class="contact-box">
+						<h3 class="contact-box-heading">ติดตามข่าวสาร</h3>
+						<p class="contact-box-text">คุณสามามรถติดตาม อัพเดทข่าวสารของ THE VICTHER&nbsp;&nbsp;เพียงแค่คุณใส่อีเมลล์ 
+						และกดปุ่มติดตามได้ที่นี้เลย</p>
+						<input type="text" class="email-input" placeholder="Email">
+						<button type="submit" class="contact-input">ติดตาม</button>
+					</div><!-- contact-box -->
+			</div>	<!-- container -->
+		</footer><!-- footer-site -->
+	</div><!-- warpper -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Login jQuery -->
+<!-- Toggle -->
+		<script type="text/javascript">
+		            $("#toggle").click(function() {
+		                $(this).toggleClass("on");
+		                $("#menu").slideToggle();
+		            });
+		</script>
+<!-- Toggle -->
+</body>
+</html>

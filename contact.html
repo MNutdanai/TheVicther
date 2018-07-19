@@ -1,0 +1,362 @@
+<html>
+<head>
+	<title>The Victher</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-contact.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="icon" href="images/logo-big.png" type="image/gif" sizes="20x20">
+	<link rel="stylesheet" type="text/css" href="css/sukhumvit.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<!-- logo footer to top -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.logo-footer').click(function(){
+				$('html,body').animate({scrollTop:0},1000);//กําหนดตําแหน่งและกําหนดคว่มเร็ว 
+				return false;
+			});
+		});
+
+	</script>
+	<!-- end logo footer to top -->
+	<!-- Toggle -->
+	<script>
+	    $(".bt-login").click(function() {
+	        $(this).toggleClass("on");
+	        $("#logbox").slideToggle();
+	    });
+	    $(document).ready(function() {
+	        $(".bt-login").click(function() {
+	            $("#logbox").toggle(600);
+	        });
+	    });
+	</script>
+	<!-- Toggle -->
+</head>
+<body>
+	<div id="wrapper">
+		<!-- social fix -->
+		<ul class='social'>
+						  <li>
+						    <a class="fa fa-facebook" href="#">    
+						      <span>Facebook</span>
+						    </a> 
+						  </li>
+						  
+						  <li>
+						    <a class="fa fa-twitter" href="#">
+						      <span>Twitter</span>
+						    </a>
+						  </li>
+						  
+						  <li>
+						    <a class="fa fa-instagram " href="#">
+						      <span>Instagram</span>
+						    </a>
+						  </li>
+
+						  <li>
+						    <a class="fa fa-google-plus" href="#">
+						    <span>Google Plus</span>
+						    </a> 
+						  </li>
+
+						  <li>
+						    <a class="fa  fa-pinterest-p" href="#">
+						    <span>Pinterest</span>
+						    </a> 
+						  </li>
+
+						  <li>
+						    <a class="fa fa-youtube-play" href="#">
+						    <span>YouTube</span>
+						    </a> 
+						  </li>
+						  
+		</ul><!-- social -->
+		<!-- social fix -->
+		<header class="header-site">
+			<nav class="nav-site">
+				<!-- toggle -->
+							<!-- mobile menu -->
+						<section id="menu_bar">
+							<span id="set_menu_bar">THE VICTHER</span>
+							<div id="bt-moblie">
+								<div id="toggle">
+									<div class="one"></div>
+									<div class="two"></div>
+									<div class="three"></div>
+								</div><!-- toggle -->
+								<div id="menu">
+									<ul>
+										<a href="home.html"><li>
+											<span>
+												<i class="fa fa-home"></i>
+											</span><br>
+											หน้าหลัก									
+										</li></a>
+										<a href="main.html"><li>
+											<span>
+												<i class="fa fa-users"></i>
+											</span><br>
+											สังคมนักปั่น</li></a>
+										<a href="chat.html"><li>
+											<span>
+												<i class="fa fa-comments"></i>
+											</span><br>
+											กระทู้</li></a>
+										<a href="about.html"><li>
+											<span>
+												<i class="fa fa-bicycle"></i>
+											</span><br>
+											เกี่ยวกับจักรยาน</li></a>
+										<li class="menu-active">
+											<span class="text-active">
+												<i class="fa fa-envelope"></i>
+											</span><br>
+											ติดต่อเรา
+										</li>
+									</ul>
+								</div><!-- menu -->
+							</div><!-- bt-moblie -->
+						</section><!-- menu_bar -->
+					<!-- toggle end -->
+			<div class="container">
+					<div class="logo"><a href="index.html"><img src="images/logo.png" class="logo-style"></a></div>
+				<div class="menu-wrapper">
+					<ul>
+					<li><a href="home.html" class="menu-item">หน้าหลัก</a></li>
+					<li><a href="main.html" class="menu-item">สังคมนักปั่น</a></li>
+					<li><a href="chat.html" class="menu-item">กระทู้ </a></li>
+					<li><a href="about.html" class="menu-item">เกี่ยวกับจักรยาน</a></li>
+					<li><a href="#" class="menu-item menu-item-active">ติดต่อเรา</a></li>
+					</ul>
+				</div>
+			</div><!-- container -->
+			
+			<div class="login">
+				<div class="container">
+					<nav class="main-nav">
+						<div class="login-bottom">
+							<button type="button"class="bottom login-bottom-ma">
+								<a class="cd-signin" href="#0">เข้าสู่ระบบ</a></button>
+							<button type="button"class="bottom login-bottom-ma">
+								<a class="cd-signup" href="#0">สมัครสมาชิก</a></button>
+						</div><!-- login-bottom -->
+					</nav><!-- login-site -->
+				</div>
+			</div><!-- login -->
+			</nav><!-- nav-site -->
+		</header><!-- header-site -->
+
+		<!-- login-box-eff -->
+			<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+			<ul class="cd-switcher">
+				<li><a href="#0">เข้าสู่ระบบ</a></li>
+				<li><a href="#0">สมัครสมาชิก</a></li>
+			</ul>
+
+			<div id="cd-login"> <!-- log in form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signin-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password">Password</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="remember-me" checked>
+						<label for="remember-me">Remember me</label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="เข้าสู่ระบบ">
+					</p>
+				</form>
+				
+				<p class="cd-form-bottom-message"><a href="#0">ลืมรหัสผ่าน?</a></p>
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-login -->
+
+			<div id="cd-signup"> <!-- sign up form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-username">Username</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="accept-terms">
+						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="สมัครสมาชิก">
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-signup -->
+
+			<div id="cd-reset-password"> <!-- reset password form -->
+				<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Reset password">
+					</p>
+				</form>
+
+				<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+			</div> <!-- cd-reset-password -->
+			<a href="#0" class="cd-close-form">Close</a>
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
+		<!-- end-login-box-eff -->
+		<section id="contact-query">
+			<div class="container-quer">
+				<h3 class="contact-hendtext-1">Contact We<br><span>I’would like to hear from you</span></h3>
+				<div id="contact-query-contant-1">
+					<input type="checkbox" id="chk-custom"	class="chk-custom">
+					<label for="chk-custom">แนะนำ-ติชม</label>
+					<input type="checkbox" id="chk-Top"	class="chk-custom">
+					<label for="chk-Top">แจ้งปัญหาการใช้งาน</label><br>
+					<select id="selectchoice" onchange="selectChoice(this.value)">
+						<option value="choice1">หัวข้อปัญหาที่พบเจอ</option>
+						<option value="choice2">หน้าเว็บโหลดช้า</option>
+						<option value="choice3">บางจุดใช้งานยาก</option>
+						<option value="choice4">การตั้งกระทู้ไร้สาระ</option>
+						<option value="choice5">ไม่สามารถติดต่อได้</option>
+						<option value="choice6">อื่นๆ</option>
+					</select>
+					<textarea type="text" name="message" placeholder="เขียนข้อความ..." id="writing-message"></textarea><br>
+					<input type="text" id="username" placeholder="กรอกชื่อ..." class="input-nameandemail">
+					<input type="email" id="email" placeholder="กรอกอีเมลล์..." class="input-nameandemail">
+					<button class="sned-btn">ยกเลิก</button>
+					<button class="sned-btn">ส่ง</button>
+				</div><!-- contact-query-contant-1 -->
+				<div id="contact-query-contant-2">
+					<h4 class="contact-hendtext-2">แบบสอบถาม</h4><br>
+					<input type="checkbox" id="chk-contant-1" class="chk-custom chk-contant-2">
+					<label for="chk-contant-1">เคยร่วมทริปจักรยานเสือภูเขา</label><br>
+					<input type="checkbox" id="chk-contant-2" class="chk-custom chk-contant-2">
+					<label for="chk-contant-2">ไปร่วมปั่นจักรยานกับกลุ่มต่างๆ</label><br>
+					<input type="checkbox" id="chk-contant-3" class="chk-custom chk-contant-2">
+					<label for="chk-contant-3">มีเพื่อนที่ชอบปั่นจักรยานเสือภูเขา</label><br>
+					<input type="checkbox" id="chk-contant-4" class="chk-custom chk-contant-2">
+					<label for="chk-contant-4">ติดตามข่าวสารเป็นประจำ</label><br>
+					<button class="chk-send">ส่ง</button>
+				</div><!-- contact-query-contant-2 -->
+			</div><!-- container-quer -->
+		</section><!-- contact-query -->
+		<section id="contact-map">
+			<div class="container-map">
+			<div id="map-wrap">
+				<h4 class="contact-hendtext-2">Visit we</h4>
+			<div id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15572.05404014375!2d99.8628123!3d12.6471182!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sth!2sth!4v1450042449348" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div><!-- map -->
+			</div><!-- map-wrap -->
+			<div id="contact-text-wrap">
+				<p class="contact-map-text"><i class="fa fa-phone"></i>&nbsp;082-3595438</p>
+				<p class="contact-map-text"><i class="fa fa-paper-plane"></i>&nbsp;tanadon214@hotmail.com</p>
+				<p class="contact-map-text"><i class="fa fa-map-marker"></i>&nbsp;ซอย ราชวิถี 18 &nbsp;&nbsp;กรุงเทพมหานคร</p>
+			</div><!-- contact-text-wrap -->
+		</div><!-- container-map -->
+		</section><!-- contact-map -->
+		<footer class="footer-site">
+			<div class="container">
+				<div class="menu-footer">
+					<nav class="nav-footer-site">
+						<ul class="footer-main-menu">	
+							<li><a href="home.html">หน้าหลัก</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="home.html#challenge">สังเวียนนักปั่น</a></li>
+									<br><li><a href="home.html#activity">กิจกรรม</a></li>
+									<br><li><a href="home.html#posts">กระทู้แนะนำ</a></li>
+									<br><li><a href="home.html#recommend">แนะนำสถานที่</a></li>
+								</ul>
+							</li>
+							<li><a href="main.html">สังคมนักปั่น</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="main.html#challenge">สังคมนักปั่น</a></li>
+									<br><li><a href="main.html#wrapper-invite">ไปปั่นกัน</a></li>
+									<br><li><a href="main.html#wrap-share">แบ่งปันประสบการณ์</a></li>
+								</ul>
+							</li>
+							<li><a href="chat.html">กระทู้</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="chat.html#chat-wrap">ร่วมพูดคุย</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">เกี่ยวกับจักรยาน</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="about.html#news">ข่าวสาร</a></li>
+									<br><li><a href="about.html#article">บทความน่ารู้</a></li>
+									<br><li><a href="about.html#bicycle-mtb">จักรยาน</a></li>
+									<br><li><a href="about.html#wrapper-gallery">แกลลอรี่</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="footer-main-menu-active">ติดต่อเรา</a>
+								<ul class="footer-sub-menu">
+									<br><li><a href="#contact-map">สถานที่</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div><!-- menu-footer -->
+					<div class="logo-footer"><img src="images/logo.png"></div>
+					<div class="contact-box">
+						<h3 class="contact-box-heading">ติดตามข่าวสาร</h3>
+						<p class="contact-box-text">คุณสามามรถติดตาม อัพเดทข่าวสารของ THE VICTHER&nbsp;&nbsp;เพียงแค่คุณใส่อีเมลล์ 
+						และกดปุ่มติดตามได้ที่นี้เลย</p>
+						<input type="text" class="email-input" placeholder="Email">
+						<button type="submit" class="contact-input">ติดตาม</button>
+					</div><!-- contact-box -->
+			</div>	<!-- container -->
+		</footer><!-- footer-site -->
+	</div><!-- wrapper -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Login jQuery -->
+<!-- Toggle -->
+		<script type="text/javascript">
+		            $("#toggle").click(function() {
+		                $(this).toggleClass("on");
+		                $("#menu").slideToggle();
+		            });
+		</script>
+<!-- Toggle -->
+</body>
+</html>
